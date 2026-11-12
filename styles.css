@@ -1,0 +1,10 @@
+:root{--bg:#fbf7f0;--card:#fff;--text:#1f2937;--chip:#e5e7eb;--accent:#1e3a8a}
+*{box-sizing:border-box}html,body{height:100%}body{margin:0;background:var(--bg);font-family:Arial}
+.site-header{text-align:center;padding:14px;background:#fff;border-bottom:1px solid #e5e7eb}
+.container{padding:14px;max-width:1000px;margin:0 auto;}
+.panel{background:var(--card);border:1px solid #e5e7eb;border-radius:12px;padding:12px}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.card{border:1px solid var(--chip);border-radius:8px;padding:10px;background:#fff;}
+.card h3{font-size:1rem;margin:0 0 6px}
+.card p{margin:0;font-size:.9rem;color:#374151}
+@media (min-width: 600px){.cards-grid{grid-template-columns:repeat(3,1fr)}}
